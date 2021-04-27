@@ -20,7 +20,7 @@ document.body.appendChild(listEl);
 
 
 
-// очередная не работающая хрень(((
+// aaaaaaaaaaaaaaaaaa(((
 // const titleRef = document.createElement('ul');
 // const navTitle = document.createElement('li');
 // navTitle.textContent =ingredients ;
