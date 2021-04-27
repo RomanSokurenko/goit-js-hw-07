@@ -1,14 +1,33 @@
-const listRef = document.querySelectorAll('.item');
-console.log(`В списке ${listRef.length} категории.`);
+const totalCategories = document.querySelectorAll(".item");
+console.log(`В списке ${totalCategories.length} категории.`);
+
+const categoriesArray = [...totalCategories]
+  .map(
+    categories => `Категория: ${categories.children[0].textContent}
+Количество элементов: ${categories.children[1].children.length}`
+  )
+  .join("\n");
+console.log(categoriesArray);
 
 
 
-listRef.forEach(el => {
-   const element = el.querySelector('ul');
-   const catRel = element;
-   console.log(`Категория: ${catRel}`);
 
-});
+
+// const listRef = document.querySelectorAll('.item');
+// console.log(`В списке ${listRef.length} категории.`);
+
+
+
+// listRef.forEach(el => {
+//    const element = el.querySelector('ul');
+//    const elementTotal = element.firstElementChild;
+//    console.log(`Категория: ${elementTotal.map}`);
+//    //console.log(`Категория: ${element}`);
+
+//    const calRel = el.querySelector('li');
+//    console.log(`Количество элементов: ${calRel}`)
+
+// });
 
 // const element1 = document.querySelector('li');
 // console.log(element1.innerText);
